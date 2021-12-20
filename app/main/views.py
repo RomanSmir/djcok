@@ -63,3 +63,7 @@ def about(request):
 
 def pricing(request):
     return render(request, "pricing.html")
+
+
+def category(request):
+    return render(request, "category.html")

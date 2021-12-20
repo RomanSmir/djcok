@@ -5,7 +5,7 @@ from django.conf.urls.static import static
 from django.conf.urls import url
 
 from upload.views import image_upload
-from main.views import welcome, register, login, logout, about, pricing
+from main.views import welcome, register, login, logout, about, pricing, category
 
 
 urlpatterns = [
@@ -16,6 +16,7 @@ urlpatterns = [
     url(r'^about/?$', about, name='about'),
     url(r'^pricing/?$', pricing, name='pricing'),
     url(r'^upload/?$', image_upload, name='upload'),
+    url(r'^category/', category, name='category'),
     url(r'^admin/', admin.site.urls),
 ]
 
