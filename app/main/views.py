@@ -6,7 +6,6 @@ from django.contrib.auth import authenticate
 
 # Register
 from users.forms import CustomUserCreationForm
-from users.controllers import UserController
 
 # Logout
 from django.contrib.auth import logout as do_logout
